@@ -80,12 +80,12 @@ public class PetDTO {
     @Override
     public String toString() {
         return
-                "id : '" + id + "'\n"+
-                "microShip : " + microShip + "'\n"+
+                "id :'" + id + "'\n"+
+                "microShip : '" + microShip + "'\n"+
                 "species : '" + species + "'\n"+
-                "sex : '" + sex + "'\n"+
-                "size : '" + size + "'\n"+
-                "potentDangerous : '" + potentDangerous + "'\n" +
-                "neighborhood : '" + neighborhood + "'\n" + "\n";
+                "sex :'" + sex + "'\n"+
+                "size :'" + size + "'\n"+
+                "potentDangerous :'" + potentDangerous + "'\n" +
+                "neighborhood :'" + neighborhood + "'\n" + "\n";
     }
 }
