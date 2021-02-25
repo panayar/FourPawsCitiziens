@@ -7,22 +7,26 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Scanner;
 
-public class FunctionsCSV {
+public class ReadCSV {
 
+    Scanner sc = new Scanner(System.in);
     ArrayList<ArrayList<String>> data;
+    Path filePath;
+    String urlPath ;
 
-    public FunctionsCSV(){
+    public ReadCSV(){
 
     }
 
-    public void readCSV (){
-
-        data  = new ArrayList<>();
-        Path filePath = Paths.get("C:\\Users\\paula\\FourPawsCitiziens\\src\\datos\\pets-citizens.csv");
+    public void readCSV (String m ){
 
 
         try {
+            data  = new ArrayList<>();
+            filePath = Paths.get(m);
+
             BufferedReader br = Files.newBufferedReader(filePath);
             String line;
 
@@ -35,18 +39,20 @@ public class FunctionsCSV {
 
         }catch (IOException e ){
 
-            e.printStackTrace();
+            System.out.println("El path no es correcto, ingreselo nuevamente");
+            urlPath = sc.next();
+            readCSV(urlPath);
+            sc.nextLine();
+
+        }catch (Exception e){
+
+            System.out.println("El path no es correcto, ingreselo nuevamente");
+            urlPath = sc.next();
+            readCSV(urlPath);
+            sc.nextLine();
         }
 
     }
-
-    public void editCSV (){
-
-
-
-
-    }
-
 
     public ArrayList<ArrayList<String>> getData() {
         return data;
@@ -54,5 +60,13 @@ public class FunctionsCSV {
 
     public void setData(ArrayList<ArrayList<String>> data) {
         this.data = data;
+    }
+
+    public Path getFilePath() {
+        return filePath;
+    }
+
+    public void setFilePath(Path filePath) {
+        this.filePath = filePath;
     }
 }
