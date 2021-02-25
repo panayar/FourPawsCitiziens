@@ -21,7 +21,6 @@ public class PetDTO {
         this.neighborhood = neighborhood;
     }
 
-
     public String getId() {
         return id;
     }
@@ -81,12 +80,12 @@ public class PetDTO {
     @Override
     public String toString() {
         return
-                "id='" + id + '\'' +
-                "microShip=" + microShip +
-                "species='" + species + '\'' +
-                "sex='" + sex + '\'' +
-                "size='" + size + '\'' +
-                "potentDangerous=" + potentDangerous +
-                "neighborhood='" + neighborhood + '\'';
+                "id : '" + id + "'\n"+
+                "microShip : " + microShip + "'\n"+
+                "species : '" + species + "'\n"+
+                "sex : '" + sex + "'\n"+
+                "size : '" + size + "'\n"+
+                "potentDangerous : '" + potentDangerous + "'\n" +
+                "neighborhood : '" + neighborhood + "'\n" + "\n";
     }
 }

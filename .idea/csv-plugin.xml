@@ -10,7 +10,21 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\src\edu\unbosque\fourPawsCitiziens\controller\Manager.java">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\src\edu\unbosque\fourPawsCitiziens\model\PetDTO.java">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\src\edu\unbosque\fourPawsCitiziens\model\persistence\ReadCSV.java">
           <value>
             <Attribute>
               <option name="separator" value=";" />
